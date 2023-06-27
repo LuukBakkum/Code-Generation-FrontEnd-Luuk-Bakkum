@@ -1,0 +1,83 @@
+Footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* .h1{ bedoeling was om de titel te veranderen naar een andere kleur maar dit werkte niet. Moet dit in een andere css file zetten.
+    background-color: black;
+    color: white;
+} */
+
+.titleContainer{
+    margin-left: 5vw;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+#imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns the image to the top */
+    height: 50vh; 
+    width: 90vw; 
+    overflow: hidden; /* This will hide any child content that doesn't fit in the container */
+    background-image: url('src/assets/images/thumb-up.jpg');
+    background-position: center top; /* Position the image to the top */
+    justify-self: center;
+    background-size: cover; /* Cover the entire area of the container */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#titleImage {
+    width: 90vw; /* Make the image full width of its parent */
+    height: 100%; /* Make the image full height of its parent */
+    object-fit: cover; /* This will ensure the image covers the full width and height of the container while maintaining its aspect ratio */
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.row {
+    margin-left: 3vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 25px; /* add some space between rows */
+}
+
+.card {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 100%; /* adjust this as needed, but make it less than 50% to allow for space between cards */
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+.card button {
+    display: block;
+    width: 50%;
+    height: 30px;
+    margin: auto; /* center the button */
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #FF7F20;
+    cursor: pointer;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Add additional styles for your footer, e.g., background color, height, etc. */
+  }
